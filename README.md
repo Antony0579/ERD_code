@@ -12,12 +12,12 @@ https://hdl.handle.net/11296/56t6px
    
 1-1. **分析並畫出ERD** (見論文 p.13)
    - `12_ERDs_0717_all.py`
-   - #### 輸入：
-   - 腦波資料：1.npy
+   - 輸入：
+       - 腦波資料：1.npy
    - 輸出：
-   - ERD 圖表：ERD.png
-   - 雜訊紀錄：antibias_list.txt
-   - 左、右手 ERD 資料：ERDS_data_left.npy、ERDS_data_right.npy
+       - ERD 圖表：ERD.png
+       - 雜訊紀錄：antibias_list.txt
+       - 左、右手 ERD 資料：ERDS_data_left.npy、ERDS_data_right.npy
    
 2-1. **ERD 指標分析計算** (見論文 p.15)
    - `23_ERD_compare_9seq_0722.py`
