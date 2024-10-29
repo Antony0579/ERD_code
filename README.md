@@ -11,8 +11,8 @@ https://hdl.handle.net/11296/56t6px
    
 ### 1. 分析並畫出ERD (見論文 p.13)
 -12_ERDs_0717_all.py
---輸入：
----腦波資料：1.npy
+-輸入：
+-腦波資料：1.npy
       輸出：
         ERD 圖表：ERD.png
         雜訊紀錄：antibias_list.txt
