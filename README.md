@@ -6,8 +6,9 @@ https://hdl.handle.net/11296/56t6px
 
 ## 執行步驟
 
-### 0-1. 準備好你的 8通道腦波資料並轉為.npy檔
-### 0-2. 按照我的資料夾整理方式排好
+0. **準備腦波資料**
+   - 準備好 8 通道腦波數據，並轉存為 `.npy` 格式文件。
+   - 按照專案的資料夾結構整理所有資料，以確保腳本能正確讀取。
    
 1. 分析並畫出ERD (見論文 p.13)
 -12_ERDs_0717_all.py
@@ -18,30 +19,13 @@ https://hdl.handle.net/11296/56t6px
         雜訊紀錄：antibias_list.txt
         左、右手 ERD 資料：ERDS_data_left.npy、ERDS_data_right.npy
    
-# ERD 指標分析計算
-
-`23_ERD_compare_9seq_0722.py` 是用於分析 ERD（事件相關去同步化）指標的 Python 腳本。該腳本從提供的 ERD 資料中計算並輸出 ERD 指標資料，根據研究所需對 ERD 數據進行比較和分析。
-
-## 文件資訊
-- **論文章節**：見論文第 15 頁
-- **檔案名稱**：`23_ERD_compare_9seq_0722.py`
-
-## 輸入資料
-- **ERD 資料**：`ERDS_data_left.npy`  
-  包含原始 ERD 數據，將用作分析的輸入資料。
-
-## 輸出資料
-- **ERD 指標資料**：`ERDS_9seq_left.npy`  
-  生成的 ERD 指標結果資料，以 `.npy` 格式儲存，供進一步分析使用。
-
-## 使用方式
-
-1. 將 `ERDS_data_left.npy` 放置於腳本的相同資料夾下，並確認名稱無誤。
-2. 在終端機執行以下指令：
-
-   ```bash
-   python 23_ERD_compare_9seq_0722.py
-
+2-1. ERD 指標分析計算 (見論文 p.15)
+     23_ERD_compare_9seq_0722.py
+      輸入：
+        ERD 資料：ERDS_data_left.npy
+      輸出：
+        ERD 指標資料：ERDS_9seq_left.npy
+幫我用成 README 中方便展示的樣子
 
 2-2. 計算雜訊比例 (見論文 p.14)
      24_biaslist_compare1.py
